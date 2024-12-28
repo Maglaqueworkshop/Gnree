@@ -61,7 +61,7 @@ search.addEventListener('keyup', ()=>{
     FilteredNames.forEach((items) => {
         var links = document.createElement("a");
         links.innerHTML = items.name + "<br>"
-        links.setAttribute("href", `./${items.name}.html`)
+        links.setAttribute("href", `${items.name}.html`)
         suggestions.appendChild(links)
     })
     if(input == ""){
@@ -81,7 +81,7 @@ function integrateTags() {
     tagg.forEach( (items) => {
         var linkTags = document.createElement("a");
         linkTags.innerHTML = items.name + "<br>"
-        linkTags.setAttribute("href", `./${items.name}.html`)
+        linkTags.setAttribute("href", `${items.name}.html`)
         mainBodyDiv.appendChild(linkTags)
     })
 }
