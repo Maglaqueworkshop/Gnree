@@ -5,7 +5,7 @@ var linkNames = [
     {name: "xpsimulation"},
     {name: "Socials"},
     {name: "League of Legends Basic Information"},
-    {name: "Links"},
+    {name: "links"},
     {name: "index"},
     {name: ""},
     {name: ""},
