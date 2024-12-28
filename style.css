@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    border-style: none;
+}
+
+body{
+    background-color: rgb(34, 29, 29);
+    color: white;
+}
+
+a{
+    color: blue;
+}
+
+a:hover{
+    color: gold;
+}
+
+
+
+
+
+
+
+
+.header-container{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 3;
+    background-color: black;
+    height: 4rem;
+    width: 100vw;
+}
+
+.main-header{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-header a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+
+
+.body-container{
+    
+    text-align: left;
+    padding: 2rem;
+}
+
+
+.main-body{
+    padding: 3rem;
+    margin-left: rem;
+}
+
+#currentButton1{
+    background-color: red;
+    border-radius: .5rem;
+    padding: .5rem;
+    cursor: pointer;
+    width: 10rem;
+    font-size: 1.5rem;
+}
+
+#currentButton1:hover{
+    transition: .2s ease-in;
+    background-color: rgb(195, 3, 3);
+    color: white;
+}
+
+
+
+.main-body label{
+    font-size: 1.5rem;
+}
+
+label:hover, p:hover, h1:hover, .h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, a:hover{
+    color: black;
+    transition: .3s ease-in-out;
+    background-color: white;
+}
+
+#rangee{
+    width: 50%;
+    text-align: center;
+}
+
+#searchbar{
+    margin-left: 2rem;
+    height: 2rem;
+    width: 25rem;
+}
+
+.searchBarContainer{
+    display: grid;
+    grid-template-columns: 1;
+}
+
+#suggestions{
+    text-align: left;
+}
+
+
+#suggestions a{
+    display: grid;
+    grid-column: 1;
+    font-size: 20px;
+    margin-left: 2rem;
+    height:fit-content;
+    width: 25.27rem;
+    top: 0;
+    color: black;
+    background-color: yellow;
+    
+}
+
+#suggestions a:hover, #linkSuggestions a:hover{
+    background-color: red;
+    transition: .2s ease-in-out;
+    color: white;
+}
+
+.main-page{
+}
+
+.main-page a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.main-page a:hover{
+    color: black;
+    background-color: white;
+    transition: .2s ease-in-out;
+}
+
+.main-page-container{
+}
+
+#tHeader{
+    width:fit-content;
+}
+
+#logo{
+    height: fit-content;
+    width: fit-content;
+}
+
+#logo:hover{
+    color: white;
+    background-color: transparent;
+}
+
+.linkSearchContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#linkSearch{
+    width: 20rem;
+    margin-bottom: 0;
+    margin-left: 4rem;
+    top: 0;
+}
+
+
+
+
+#linkSuggestions{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 20.24rem;
+    margin-left: 4rem;
+    
+}
+
+#linkSuggestions a{
+    color: black;
+    background-color: yellow;
+}
