@@ -1,17 +1,16 @@
 
 
-
-var linkNames = [
+//html files must be lowercase
+var FileNamess = [
     {name: "xpsimulation"},
-    {name: "Socials"},
-    {name: "League of Legends Basic Information"},
+    {name: "socials"},
     {name: "links"},
     {name: "index"},
-    {name: ""},
-    {name: ""},
-    {name: ""},
-    {name: ""},
-    {name: ""},
+    {name: "about"},
+    {name: "smolstory"},
+    {name: "icedmilkshake"},
+    {name: "french"},
+    {name: "leagueoflegends"},
     {name: ""},
     {name: ""},
     {name: ""},
@@ -24,39 +23,31 @@ var linkNames = [
 
 
 
-//sort the arrays LinkNames items
-var sortedLinkNames =  linkNames.sort((a, b) => {
+//sort the arrays FileNamess items
+var sortedFileNamess =  FileNamess.sort((a, b) => {
     return a.name.localeCompare(b.name); // Alphabetical sort
 });
 
-console.log(sortedLinkNames);
-
-
-
-
-
-
-
-
+console.log(sortedFileNamess);
 
 
 
 
 var suggestions = document.getElementById("suggestions")
 var search = document.getElementById("searchbar")
-var mainBodyDiv = document.getElementById("main-body")
+var mainBodyDiv = document.getElementById("search-function")
 
-
+search.setAttribute("placeholder", "Recherche")
 
 search.addEventListener('keyup', ()=>{
 
     var input = search.value.toLowerCase();
     suggestions.innerHTML = ""
-    var FilteredNames = linkNames.filter( (names) => {
-        return names.name.toLowerCase().startsWith(input)
+    var FilteredNames = FileNamess.filter( (names) => {
+        return names.name.toLowerCase().match(input)
     })
 
-    console.log(FilteredNames, linkNames.name);
+    console.log(FilteredNames, FileNamess.name);
 
     FilteredNames.forEach((items) => {
         var links = document.createElement("a");
@@ -71,7 +62,7 @@ search.addEventListener('keyup', ()=>{
 
 
 function integrateTags() {
-    var sortedLinks = sortedLinkNames;
+    var sortedLinks = sortedFileNamess;
 
 
     var tagg = sortedLinks.filter( (items) => {
@@ -89,8 +80,3 @@ function integrateTags() {
 
 
 integrateTags();
-
-
-
-
-

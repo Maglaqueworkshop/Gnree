@@ -6,6 +6,7 @@
 body{
     background-color: rgb(34, 29, 29);
     color: white;
+    overflow-x: hidden;
 }
 
 a{
@@ -82,10 +83,26 @@ a:hover{
     font-size: 1.5rem;
 }
 
-label:hover, p:hover, h1:hover, .h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, a:hover{
+a, pre{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+pre:hover, 
+label:hover, 
+p:hover, 
+h1:hover, 
+h2:hover, 
+h3:hover, 
+h4:hover, 
+h5:hover, 
+h6:hover, 
+a:hover{
     color: black;
     transition: .3s ease-in-out;
     background-color: white;
+    width:fit-content;
 }
 
 #rangee{
@@ -109,6 +126,7 @@ label:hover, p:hover, h1:hover, .h2:hover, h3:hover, h4:hover, h5:hover, h6:hove
 }
 
 
+
 #suggestions a{
     display: grid;
     grid-column: 1;
@@ -122,7 +140,12 @@ label:hover, p:hover, h1:hover, .h2:hover, h3:hover, h4:hover, h5:hover, h6:hove
     
 }
 
-#suggestions a:hover, #linkSuggestions a:hover{
+/*
+re-use for suggestions-hover
+*/
+
+#suggestions a:hover, 
+#linkSuggestions a:hover{
     background-color: red;
     transition: .2s ease-in-out;
     color: white;
@@ -160,20 +183,27 @@ label:hover, p:hover, h1:hover, .h2:hover, h3:hover, h4:hover, h5:hover, h6:hove
     background-color: transparent;
 }
 
+
+/*re-use for input search container*/
+
 .linkSearchContainer {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
 
+/*re-use for main-input search*/
+
 #linkSearch{
     width: 20rem;
+    height: 2rem;
     margin-bottom: 0;
-    margin-left: 4rem;
+    margin-left: 5rem;
     top: 0;
 }
 
 
+/*re-use for search suggestions*/
 
 
 #linkSuggestions{
@@ -181,11 +211,30 @@ label:hover, p:hover, h1:hover, .h2:hover, h3:hover, h4:hover, h5:hover, h6:hove
     flex-direction: column;
     overflow: hidden;
     width: 20.24rem;
-    margin-left: 4rem;
-    
+    margin-left: 5rem;
 }
+
 
 #linkSuggestions a{
     color: black;
     background-color: yellow;
+}
+
+#linkSuggestions a:hover{
+    width: 20.24rem;
+}
+
+
+.back-button a{
+    color: white;
+    background-color: red;
+}
+
+.back-button a:hover{
+    color: black;
+    background-color: yellow;
+}
+
+.back-button{
+    width:fit-content;
 }
