@@ -1,0 +1,29 @@
+#searchBarContainer{
+    height: 3rem;
+}
+
+#mainSearchBar{
+    height: 2rem;
+    width: 30rem;
+}
+
+#searchSuggestions{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    text-align: left;
+}
+
+#searchSuggestions a{
+    color: black;
+    background-color: yellow;
+    font-size: 20px;
+    width: 30rem;
+}
+
+#searchSuggestions a:hover{
+    color: white;
+    background-color: red;
+    cursor: pointer;;
+}

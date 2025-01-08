@@ -1,0 +1,23 @@
+#headerWrapper{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+
+
+#mainHeader{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+}
+
+#logo{
+    margin-right: 2rem;
+    font-size: 2rem;
+    height: fit-content;
+    width: fit-content;
+    font-style: italic;
+}
+

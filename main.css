@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(56, 54, 54);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+a, h1, h2, h3, h4, h5, h6, p, pre{
+    color: white;
+    height: fit-content;
+    width:fit-content;
+}
+
+a:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, p:hover, pre:hover{
+    color: black;
+    background-color: white;
+}
+
+pre{
+    font-size: 1.5rem;
+}

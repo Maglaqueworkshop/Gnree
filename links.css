@@ -1,0 +1,161 @@
+#index-header, #links{
+    margin: auto;
+}
+
+
+
+#links{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+
+#links a{
+    font-size: 1.4rem;
+    height: fit-content;
+    width: fit-content;
+
+}
+
+
+#links a:hover{
+    background-color: yellow;
+    color: black;
+}
+
+
+
+#return_div{
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+#return{
+    
+    color: white;
+    background-color: red;
+}
+
+
+#return:hover{
+    color: black;
+    background-color: yellow;
+}
+
+#pop_up{
+
+    width: 90vw;
+    height: fit-content;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: rgb(226, 48, 48);
+    
+}
+
+#pop_up pre, 
+#pop_up p,
+#pop_up h2,
+#pop_up h3,
+#pop_up h4,
+#pop_up h5,
+#pop_up h6{
+    margin: auto;
+    margin-top: .5rem;
+    color: rgb(0, 0, 0);
+}
+
+#pop_up a{
+    margin: auto;
+    margin-top: .5rem;
+    color: blue;
+}
+
+#shadow_wrapperOn{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: rgba(0, 0, 0, 0.742);
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+#shadow_wrapperOff{
+    display: none;
+}
+
+#close_btn{
+    position: fixed;
+    border-radius: 0;
+    border-style: none;
+    color: white;
+    background-color: rgb(97, 27, 27);
+    font-size: 2rem;
+    cursor: pointer;
+    height: 3rem;
+    user-select: none;
+}
+
+#close_btn:hover{
+    background-color: white;
+    color: black;
+}
+
+#iContent pre, 
+#iContent p,
+#iContent h1,
+#iContent h2,
+#iContent h3,
+#iContent h4,
+#iContent h5,
+#iContent h6,
+#iContent a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#iContent pre, 
+#iContent p,
+#iContent h1,
+#iContent h2,
+#iContent h3,
+#iContent h4,
+#iContent h5,
+#iContent h6{
+    color: white;
+}
+
+
+#iContent pre:hover, 
+#iContent p:hover,
+#iContent h1:hover,
+#iContent h2:hover,
+#iContent h3:hover,
+#iContent h4:hover,
+#iContent h5:hover,
+#iContent h6:hover{
+    color: black;
+    background-color: white;
+}
+
+
+#pop_upTitle{
+    margin: auto;
+    margin-top: .5rem;
+    color: white;
+}
+
+
+#pop_upTitle:hover{
+    color: black;
+    background-color: white;
+}
