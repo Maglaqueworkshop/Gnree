@@ -50,13 +50,22 @@
 #pop_up{
 
     width: 90vw;
-    height: fit-content;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    background-color: rgb(226, 48, 48);
-    
+    height: 80vh;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+
+
+
+    background-color: rgb(102, 3, 3);
+    overflow: hidden;
+    overflow-y: auto;
+
+    border-radius: .9rem;
+    box-shadow: rgb(0, 0, 0) 1rem .5rem 30rem .5rem;
+    outline: 1.3px solid white;
+
+
 }
 
 #pop_up pre, 
@@ -75,6 +84,7 @@
     margin: auto;
     margin-top: .5rem;
     color: blue;
+
 }
 
 #shadow_wrapperOn{
@@ -82,7 +92,7 @@
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    background-color: rgba(0, 0, 0, 0.742);
+    background-color: rgba(0, 0, 0, 0.843);
     margin: auto;
     width: 100%;
     height: 100%;
@@ -93,21 +103,24 @@
 }
 
 #close_btn{
-    position: fixed;
+    position:absolute;
     border-radius: 0;
     border-style: none;
-    color: white;
-    background-color: rgb(97, 27, 27);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     font-size: 2rem;
     cursor: pointer;
     height: 3rem;
     user-select: none;
+    width: 3rem;
 }
 
 #close_btn:hover{
-    background-color: white;
-    color: black;
+    background-color: rgb(31, 30, 30);
+    color: rgb(255, 255, 255);
 }
+
+
 
 #iContent pre, 
 #iContent p,
@@ -159,3 +172,12 @@
     color: black;
     background-color: white;
 }
+
+
+
+
+
+
+
+
+

@@ -1,11 +1,13 @@
 *{
     margin: 0;
     box-sizing: border-box;
+
 }
 
 
 body{
-    background-color: rgb(56, 54, 54);
+    background-color: rgb(139, 8, 8);
+    overflow-y: hidden;
 }
 
 a{
@@ -27,3 +29,10 @@ a:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, p:hover, pr
 pre{
     font-size: 1.5rem;
 }
+
+
+
+
+
+
+

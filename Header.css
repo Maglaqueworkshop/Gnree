@@ -11,6 +11,8 @@
     overflow: hidden;
     text-align: center;
     padding: 1rem;
+    background-image: url(3.gif);
+    outline: 1px solid white;
 }
 
 #logo{
